@@ -49,3 +49,12 @@ Note: The key id is hard code in script, please replace key id with yours.
 ./scripts/encrypt-with-shush.sh
 ./scripts/decrypt-with-shush.sh
 ```
+
+### Audit key usage
+
+Create a trail, trail send all event/api calls to a cloudwatch log group.
+Create a metric on log group to filter out my kms usage.
+
+```
+./scripts/deploy.sh
+```
